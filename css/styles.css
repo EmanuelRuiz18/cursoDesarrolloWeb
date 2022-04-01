@@ -1,0 +1,47 @@
+* {
+    background-color: #F2F3F4;
+    font-family: 'Raleway', sans-serif;
+}
+#header {
+    display: flex;  /* Tipo de display, flexbox */
+    justify-content: space-between; /* Alineación de los contenedores */
+    border: 2px solid;  /* Tamaño del borde del header */
+    height: 180px;  /* Se le asigna el tamaño al header */
+    align-items: center;    /* Se alinea horizontalmente y verticalmente el contenido */
+    margin: 10px;
+}
+.headerLogo {
+    width: auto;
+    margin-left: 20px;
+}
+.headerMenu ul{
+    display: flex;  /* Se aplica flexbox */
+    list-style: none;   /* Se le quitan las viñetas a las listas */
+    margin-right: 20px;
+}
+.headerMenu ul li{
+    margin: 0 15px;
+}
+a {
+    text-decoration: none;
+}
+/* Navegación */
+
+.texto {
+    text-align: justify;
+    font-family: 'Archivo Black', sans-serif;    
+}
+.desPag {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.subTitulo {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+}
+
