@@ -8,11 +8,13 @@
 .grid {
     display: grid;
     width: 100%;
-    grid-template-areas:"header header header header"
-                        "contenido contenido contenido widget1"
-                        "contenido contenido contenido widget1"
-                        "contenido contenido contenido widget2"
-                        "footer footer footer footer";
+    max-width: 1450px;
+    margin: 0 auto;
+    grid-template-areas:"header header header"
+                        "contenido contenido widget1"
+                        "contenido contenido widget1"
+                        "contenido contenido widget2"
+                        "footer footer footer";
 }
 #header {
     grid-area: header;
@@ -22,6 +24,9 @@
     height: 180px;  /* Se le asigna el tamaño al header */
     align-items: center;    /* Se alinea horizontalmente y verticalmente el contenido */
     margin: 10px;
+    max-width: 1500px;
+    min-width: 700px;
+    
 }
 .headerLogo {
     width: auto;
@@ -34,13 +39,18 @@
 }
 .headerMenu ul li{
     margin: 0 15px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 a {
     text-decoration: none;
 }
 a:hover {
     color: blue;
+    background-color: #7bbbf3;
+    
 }
+/* Fin de navegación */
 .contenido {
     grid-area: contenido;
     margin-left: 50px;
@@ -51,7 +61,7 @@ a:hover {
     border: 1px solid;
     padding: 20px;
     padding-top: 50px;
-
+    min-width: 250px;
 }
 .widget2 {
     grid-area: widget2;
@@ -87,13 +97,14 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
-    justify-items: center;
+    justify-items: center; 
     margin: 0px 10px 30px 10px;
     border: 1px solid;
     padding: 20px;
 }
 #galeria img {
     width: 200px;
+    height: auto;
 }
 
 #galeria img:nth-child(1) {
@@ -104,26 +115,29 @@ a:hover {
 @media screen and (max-width: 992px) {
     .grid {
         display: grid;
-        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        justify-items: center;
         align-items: stretch;
-        grid-template-areas:"header header header"
-                            "contenido contenido contenido"
-                            "contenido contenido contenido"
-                            "widget1 widget1 widget2"
-                            "footer footer footer";
+        grid-template-areas:"header header header header"
+                            "contenido contenido contenido contenido"
+                            "contenido contenido contenido contenido"
+                            "widget1 widget1 . widget2"
+                            "widget1 widget1 . widget2"
+                            "footer footer footer footer";
+        grid-template-rows: 300px 300px 300px 300px;
     }
-}
 @media screen and (max-width: 768px) {
     .grid {
         display: grid;
         justify-content: center;
         align-items: stretch;
-        grid-template-areas:"header header"
-                            "contenido contenido"
-                            "contenido contenido"
-                            "widget1 widget1"
-                            "widget2 widget2"
-                            "footer footer";
+        grid-template-areas:"header header header"
+                            "contenido contenido contenido"
+                            "contenido contenido contenido"
+                            "widget1 widget1 widget 1"
+                            "widget2 widget2 widget 2"
+                            "footer footer footer";
     }
     .widget1 {
         max-width: none;
@@ -132,5 +146,4 @@ a:hover {
         max-width: none;
     }
 }
-
-
+}
