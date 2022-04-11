@@ -6,6 +6,7 @@
     box-sizing: 0;
 }
 .grid {
+    width: 85%;
     display: grid;
     width: 100%;
     max-width: 1450px;
@@ -46,12 +47,12 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: blue;
-    background-color: #7bbbf3;
+    color: rgb(0, 0, 12);
+    background-color: #9ecef8;
     
 }
 /* Fin de navegación */
-.contenido {
+#contenido {
     grid-area: contenido;
     margin-left: 50px;
 }
