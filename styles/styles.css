@@ -10,11 +10,15 @@
     width: 100%;
     max-width: 1450px;
     margin: 0 auto;
+    gap: 10px;
     grid-template-areas:"header header header"
                         "contenido contenido widget1"
                         "contenido contenido widget1"
                         "contenido contenido widget2"
                         "footer footer footer";
+}
+p, h1, h2, h3, h4 {
+    margin: 20px 0 20px 0;
 }
 #header {
     grid-area: header;
@@ -26,6 +30,7 @@
     margin: 10px;
     max-width: 1500px;
     min-width: 700px;
+    background-color: #f7f7f7;
     
 }
 .headerLogo {
@@ -57,28 +62,22 @@ a:hover {
 }
 .widget1 {
     grid-area: widget1;
-    margin: 0px 50px 20px 30px;
-    border: 1px solid;
-    padding: 20px;
-    padding-top: 50px;
-    min-width: 250px;
 }
 .widget2 {
     grid-area: widget2;
-    margin: 0px 50px 0px 30px;
-    border: 1px solid;
-    padding: 20px;
 }
 #footer {
     grid-area: footer;
     text-align: center;
     margin: 20px 20px 0px 20px;
     border-top: 1px solid;
-    background-image: linear-gradient(to bottom, red, yellow);
-    background-size: contain;
+    background-image: radial-gradient(circle at -16.45% 74.18%, #c2ffff 0, #6c90d8 50%, #242d40 100%);
 }
 #footer p {
     margin: 15px;
+}
+#footer img {
+    border-radius: 20px;
 }
 .texto {
     text-align: justify;
