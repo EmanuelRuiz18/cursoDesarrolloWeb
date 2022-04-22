@@ -1,0 +1,26 @@
+header {
+    grid-area: header;
+    display: flex;  /* Tipo de display, flexbox */
+    justify-content: space-between; /* Alineación de los contenedores */
+    border: 2px solid;  /* Tamaño del borde del header */
+    height: 180px;  /* Se le asigna el tamaño al header */
+    align-items: center;    /* Se alinea horizontalmente y verticalmente el contenido */
+    margin: 10px;
+    max-width: 1500px;
+    min-width: 700px;
+    background-color: #f7f7f7;
+    div {
+        width: auto;
+        margin-left: 20px;    
+    }
+    nav {
+        display: flex;  /* Se aplica flexbox */
+        list-style: none;   /* Se le quitan las viñetas a las listas */
+        margin-right: 30px;
+        ul li {
+            margin: 0 15px;
+            font-weight: 600;
+            text-transform: uppercase;        
+        }    
+    }
+}
