@@ -1,10 +1,10 @@
 header {
     grid-area: header;
-    display: flex;  /* Tipo de display, flexbox */
-    justify-content: space-between; /* Alineación de los contenedores */
-    border: 2px solid;  /* Tamaño del borde del header */
-    height: 180px;  /* Se le asigna el tamaño al header */
-    align-items: center;    /* Se alinea horizontalmente y verticalmente el contenido */
+    display: flex;  
+    justify-content: space-between;
+    border: 2px solid;  
+    height: 180px;  
+    align-items: center;    
     margin: 10px;
     max-width: 1500px;
     min-width: 700px;
@@ -23,4 +23,59 @@ header {
             text-transform: uppercase;        
         }    
     }
+}
+#contenido {
+    grid-area: contenido;
+    margin-left: 50px;
+    .desPag {
+        margin-top: 40px;
+        margin-bottom: 40px;    
+    }
+    .flexIzquierda {
+        padding-left: 30px;
+        text-align: justify;    
+    }
+    .flexDerecha {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;    
+    }
+    .subTitulo {
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        text-decoration: underline;    
+    }
+}
+.widget1 {
+    grid-area: widget1;
+    .subTitulo {
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        text-decoration: underline;    
+    }
+}
+.widget2 {
+    grid-area: widget2;
+    .subTitulo {
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        text-decoration: underline;    
+    }
+}
+#footer {
+    grid-area: footer;
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+    border-top: 1px solid;
+    background-image: radial-gradient(circle at -16.45% 74.18%, #c2ffff 0, #6c90d8 50%, #242d40 100%);
+    & p {
+        margin: 15px;
+    }
+    & img {
+        border-radius: 20px;
+    }  
 }
