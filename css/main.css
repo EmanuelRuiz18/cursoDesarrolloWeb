@@ -1,0 +1,45 @@
+@charset "UTF-8";
+header {
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Tipo de display, flexbox */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* Alineación de los contenedores */
+  border: 2px solid;
+  /* Tamaño del borde del header */
+  height: 180px;
+  /* Se le asigna el tamaño al header */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Se alinea horizontalmente y verticalmente el contenido */
+  margin: 10px;
+  max-width: 1500px;
+  min-width: 700px;
+  background-color: #f7f7f7;
+}
+
+header div {
+  width: auto;
+  margin-left: 20px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Se aplica flexbox */
+  list-style: none;
+  /* Se le quitan las viñetas a las listas */
+  margin-right: 30px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
